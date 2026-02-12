@@ -1,8 +1,10 @@
-- name: print uname and password
+- name: play level variables
   hosts: local
   connection: local
   tasks:
-    - name: print info
-      ansible.builtin.debug:
-        msg: "username is {{ username }}"
+  - name: print variables
+    vars:
+     COURSE: Ansible
+    ansible.builtin.debug:
+     msg: "Course is: {{ COURSE }}"
 
