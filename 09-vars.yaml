@@ -1,0 +1,7 @@
+- name: variables form the aruguments
+  hosts: local
+  connection: local
+  tasks:
+  - name: print variables form aruguments
+    ansible.builtin.debug:
+    msg: " Hi {{ Name }}, Good Morning"    
